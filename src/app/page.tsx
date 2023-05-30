@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import Navbar from "@/components/Navbar";
@@ -10,10 +11,11 @@ export default function Home() {
     <div className="container w-11/12 mx-auto">
       <Navbar />
       <Hero />
-      <Promotion/>
-      <ProductSection/>
-      <Info/>
-      <Newsletter/>
+      <Promotion />
+      <ProductSection />
+      <Info />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
