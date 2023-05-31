@@ -5,11 +5,8 @@ import { useState } from "react";
 import { BsMoonStarsFill, BsFillCartFill } from "react-icons/bs";
 import { MdWbSunny } from "react-icons/md";
 
-
-
 export default function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
 
   return (
     <nav>
@@ -19,7 +16,10 @@ export default function Navbar() {
           <Link href={"/"} className="hover:text-zinc-400 easeInOutEffect ">
             Home
           </Link>
-          <Link href={"/"} className="hover:text-zinc-400 easeInOutEffect">
+          <Link
+            href={"/products"}
+            className="hover:text-zinc-400 easeInOutEffect"
+          >
             Products
           </Link>
         </div>
@@ -27,7 +27,7 @@ export default function Navbar() {
           <button
             className={`buttonColor easeInOutEffect`}
             onClick={() => {
-                setIsDarkMode(!isDarkMode);
+              setIsDarkMode(!isDarkMode);
             }}
           >
             {isDarkMode !== false ? (
@@ -37,7 +37,9 @@ export default function Navbar() {
             )}
           </button>
           <button className="buttonColor easeInOutEffect">
-            <BsFillCartFill className="iconEffect easeInOutEffect " />
+            <Link href={"/cart"}>
+              <BsFillCartFill className="iconEffect easeInOutEffect " />
+            </Link>
           </button>
         </div>
       </div>

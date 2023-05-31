@@ -1,10 +1,6 @@
-import React from "react";
-import product1 from "../../public/product1.jpg";
-import Image from "next/image";
-
 export default function Info() {
   return (
-    <div className="flex flex-col my-36 items-center justify-center content-center ">
+    <div className="flex flex-col my-52 items-center justify-center content-center ">
       <div className="flex flex-col gap-8 justify-center items-center ">
         <h1 className="text-9xl font-bold opacity-5 absolute">Newsletter</h1>
         <h1 className="text-5xl font-bold font-sans">
